@@ -12,6 +12,6 @@ public class DialRotator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cube1.transform.Rotate(0.0f, 0.0f, 0.05f, Space.Self);
+        cube1.transform.Rotate(0.0f, 0.05f, 0.0f, Space.Self);
     }
 }
