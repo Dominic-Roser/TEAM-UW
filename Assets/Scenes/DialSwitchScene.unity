@@ -788,6 +788,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 351066cc4e35c405fa4871288b38cd52, type: 2}
+    - target: {fileID: 6702806784429691972, guid: 1692d5be9184f43afbc6b1bed9c28b5b, type: 3}
+      propertyPath: m_Renderer
+      value: 
+      objectReference: {fileID: 1249617919}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1428,6 +1432,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: fa0c44897379541a28a5f909fa51dd51, type: 2}
+    - target: {fileID: 6702806784429691972, guid: 1692d5be9184f43afbc6b1bed9c28b5b, type: 3}
+      propertyPath: m_Renderer
+      value: 
+      objectReference: {fileID: 1249617919}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2484,6 +2492,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6702806784429691972, guid: 1692d5be9184f43afbc6b1bed9c28b5b, type: 3}
+      propertyPath: m_Renderer
+      value: 
+      objectReference: {fileID: 1249617919}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2967,6 +2979,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 8e0112c2b7f974ebb957bb1ebf34430b, type: 2}
+    - target: {fileID: 6702806784429691972, guid: 1692d5be9184f43afbc6b1bed9c28b5b, type: 3}
+      propertyPath: m_Renderer
+      value: 
+      objectReference: {fileID: 1249617919}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3028,6 +3044,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: df8f2db2f08204b52ae6821f3c9f0f57, type: 2}
+    - target: {fileID: 6702806784429691972, guid: 1692d5be9184f43afbc6b1bed9c28b5b, type: 3}
+      propertyPath: m_Renderer
+      value: 
+      objectReference: {fileID: 1249617919}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
