@@ -8,11 +8,8 @@ public class DialRotator : MonoBehaviour
     {
         
     }
-    void rotateDialLeft() {
-        dial.transform.Rotate(0.0f, 0.05f, 0.0f, Space.Self);
-    }
-    void rotateDialRight() {
-        dial.transform.Rotate(0.0f, 0.05f, 0.0f, Space.Self);
+    void onDialRotate () {
+        Debug.Log("dial rotated");
     }
     // Update is called once per frame
     void Update()
