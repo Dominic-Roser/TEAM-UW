@@ -1,3 +1,4 @@
 # TEAM-UW
 ...
-Our Project
+Our Project:
+Radu, Dalton, Sean, Dominic
