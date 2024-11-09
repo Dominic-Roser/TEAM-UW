@@ -1,11 +1,13 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Content.Interaction;
+using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
 public class XRPlayPauseAudio : MonoBehaviour
 {
     public AudioSource audioSource; // Attach your AudioSource in the Inspector
     public XRSlider slider;
+    public PausePlayText pausePlay;
     private bool isPlaying = false;
 
     public void Update()
@@ -21,11 +23,13 @@ public class XRPlayPauseAudio : MonoBehaviour
         {
             audioSource.Pause();
             isPlaying = false;
+            //Set text to Pause
         }
         else
         {
             audioSource.Play();
             isPlaying = true;
+            //Set text to play
         }
     }
 }
