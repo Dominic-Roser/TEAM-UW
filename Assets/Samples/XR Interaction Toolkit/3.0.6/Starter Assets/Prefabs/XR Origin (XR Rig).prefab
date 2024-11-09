@@ -701,7 +701,7 @@ MonoBehaviour:
       m_Name: Left Hand Move
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: 077c542a-cc7c-4bb2-b588-4de85e23a948
+      m_Id: 1fb26387-9b76-41c5-a229-35c30869c19e
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -713,7 +713,7 @@ MonoBehaviour:
       m_Name: Right Hand Move
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: a4d1f85b-2bc7-41e3-b985-b980b36fd70c
+      m_Id: b73d957b-f2a5-4683-b5ab-9177d3f031ab
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
