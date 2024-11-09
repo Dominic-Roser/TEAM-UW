@@ -8,7 +8,12 @@ public class DialRotator : MonoBehaviour
     {
         
     }
-    //bobo
+    void rotateDialLeft() {
+        dial.transform.Rotate(0.0f, 0.05f, 0.0f, Space.Self);
+    }
+    void rotateDialRight() {
+        dial.transform.Rotate(0.0f, 0.05f, 0.0f, Space.Self);
+    }
     // Update is called once per frame
     void Update()
     {
