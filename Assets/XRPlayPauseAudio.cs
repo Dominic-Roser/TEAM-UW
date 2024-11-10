@@ -4,10 +4,10 @@ using UnityEngine.XR.Content.Interaction;
 
 public class XRPlayPauseAudio : MonoBehaviour
 {
-    public XRSlider PitchSlider;
+    //public XRSlider PitchSlider;
     public XRSlider LRSlider;
-    public XRKnob VolumeKnob;
-    public AudioSource audioSource; // Attach your AudioSource in the Inspector
+    public XRSlider VolumeSlider;
+    public AudioSource audioSource; // Attach your AudioSource in the Inspectora
     private bool isPlaying = false;
     public int fftSize = 64;
     public int customArraySize = 5;
@@ -20,11 +20,11 @@ public class XRPlayPauseAudio : MonoBehaviour
     }
 
     public void updateVolume() {
-        audioSource.volume = VolumeKnob.value;
+        audioSource.volume = VolumeSlider.value;
     }
-    public void updatePitch() {
-        audioSource.pitch = 6.0f*(PitchSlider.value-0.5f);
-    }
+    // public void updatePitch() {
+    //     audioSource.pitch = 6.0f*(PitchSlider.value-0.5f);
+    // }
     public void updateLR() {
         audioSource.panStereo = 2.0f*(LRSlider.value-0.5f);
     }
@@ -49,7 +49,7 @@ public class XRPlayPauseAudio : MonoBehaviour
     public void Update() {
         if (isPlaying) {
             updateVolume();
-            updatePitch();
+            // updatePitch();
             updateLR();
              //FFT logic here driving the lights and what not
             // Get the spectrum data from the audio source
