@@ -15,14 +15,14 @@ public class FlameStreamToggle : MonoBehaviour
         // Toggle play/pause based on the current state
         if (isPlaying)
         {
-            flame1.Pause();
-            flame1.Pause();
+            flame1.Stop();
+            flame2.Stop();
             isPlaying = false;
         }
         else
         {
             flame1.Play();
-            flame1.Play();
+            flame2.Play();
             isPlaying = true;
         }
     }
