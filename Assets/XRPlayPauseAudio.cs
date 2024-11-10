@@ -23,10 +23,10 @@ public class XRPlayPauseAudio : MonoBehaviour
         audioSource.volume = VolumeKnob.value;
     }
     public void updatePitch() {
-        audioSource.pitch = PitchSlider.value;
+        audioSource.pitch = 6.0f*(PitchSlider.value-0.5f);
     }
     public void updateLR() {
-        audioSource.panStereo = LRSlider.value;
+        audioSource.panStereo = 2.0f*(LRSlider.value-0.5f);
     }
 
 
