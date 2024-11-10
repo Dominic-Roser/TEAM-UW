@@ -4,10 +4,11 @@ using UnityEngine.XR.Content.Interaction;
 
 public class XRPlayPauseAudio : MonoBehaviour
 {
-    public XRSlider Slider;
+    public XRSlider PitchSlider;
+    public XRSlider LRSlider;
+    public XRKnob VolumeKnob;
     public AudioSource audioSource; // Attach your AudioSource in the Inspector
     private bool isPlaying = false;
-    
     public int fftSize = 64;
     public int customArraySize = 5;
     public float[] spectrumData;
@@ -19,8 +20,15 @@ public class XRPlayPauseAudio : MonoBehaviour
     }
 
     public void updateVolume() {
-        audioSource.volume = Slider.value;
+        audioSource.volume = VolumeKnob.value;
     }
+    public void updatePitch() {
+        audioSource.pitch = PitchSlider.value;
+    }
+    public void updateLR() {
+        audioSource.panStereo = LRSlider.value;
+    }
+
 
     // This method will be called on Select Entered
     public void OnSelectEntered(SelectEnterEventArgs args)
@@ -41,6 +49,8 @@ public class XRPlayPauseAudio : MonoBehaviour
     public void Update() {
         if (isPlaying) {
             updateVolume();
+            updatePitch();
+            updateLR();
              //FFT logic here driving the lights and what not
             // Get the spectrum data from the audio source
             audioSource.GetSpectrumData(spectrumData, 0, FFTWindow.Hamming);
