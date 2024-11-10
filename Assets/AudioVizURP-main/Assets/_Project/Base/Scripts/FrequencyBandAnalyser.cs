@@ -18,10 +18,10 @@ public class FrequencyBandAnalyser : MonoBehaviour
     float[] _Samples;
     float[] _SampleBuffer;
 
-    public float _SmoothDownRate = 0;
-    public float _Scalar = 1;
+    public float _SmoothDownRate;
+    public float _Scalar;
 
-    public bool _DrawGizmos = false;
+    public bool _DrawGizmos;
 
     [HideInInspector]
     public float[] _FreqBands8;
@@ -32,7 +32,6 @@ public class FrequencyBandAnalyser : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AudioSource = GetComponent<AudioSource>();
 
         _FreqBands8 = new float[8];
         _FreqBands64 = new float[64];
