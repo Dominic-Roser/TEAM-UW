@@ -41,7 +41,7 @@ public class XRPlayPauseAudio : MonoBehaviour
     public void Update() {
         if (isPlaying) {
             updateVolume();
-            //FFT logic here driving the lights and what not
+             //FFT logic here driving the lights and what not
             // Get the spectrum data from the audio source
             audioSource.GetSpectrumData(spectrumData, 0, FFTWindow.Hamming);
 
