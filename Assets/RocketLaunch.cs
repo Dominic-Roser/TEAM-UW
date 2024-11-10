@@ -2,15 +2,25 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
 
-public class RocketLaunch : MonoBehaviour
+public class Fog : MonoBehaviour
 {
-    public ParticleSystem rocketLaunch;
+    public ParticleSystem fog;
+    private bool isPlaying = false;
 
 
     // This method will be called on Select Entered
     public void OnSelectEntered(SelectEnterEventArgs args)
     {
         // Toggle play/pause based on the current state
-        rocketLaunch.Play();
+        if (isPlaying)
+        {
+            fog.Stop();
+            isPlaying = false;
+        }
+        else
+        {
+            fog.Play();
+            isPlaying = true;
+        }
     }
 }
